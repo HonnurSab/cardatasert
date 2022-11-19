@@ -1,0 +1,11 @@
+import matplotlib
+from matplotlib import pyplot as plt
+import seaborn as sns
+import pandas as pd
+import math
+import numpy as np
+df=pd.read_csv("dataset-83422.csv")
+df=df.head()
+fig=plt.figure()
+plt.title("Price Range of Car")
+sns.boxplot(df["Price"])
